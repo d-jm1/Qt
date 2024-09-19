@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QGroupBox" name="groupBox_item_set">
+        <property name="title">
+         <string>设置对象</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="rbt_list_source">
+           <property name="text">
+            <string>listSource</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbt_list_widget">
+           <property name="text">
+            <string>listWidget</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="tbt_tree_widget">
+           <property name="text">
+            <string>treeWidget</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rbt_table_widget">
+           <property name="text">
+            <string>tableWidget</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_drag_args_set">
+        <property name="title">
+         <string>拖放参数设置</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="chk_accept_drops">
+           <property name="text">
+            <string>acceptDrops</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="chk_drag_enable">
+           <property name="text">
+            <string>dragEnabled</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>dragDropMode</string>
+           </property>
+           <property name="buddy">
+            <cstring>comboBox_drag_drop_mode</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="comboBox_drag_drop_mode">
+           <item>
+            <property name="text">
+             <string>Copy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Move</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Link</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ignore</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>defaultDropAction</string>
+           </property>
+           <property name="buddy">
+            <cstring>comboBox_default_drop_act</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="comboBox_default_drop_act"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QGroupBox" name="groupBox_list_source">
+        <property name="title">
+         <string>listSource</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QListWidget" name="listWidget_source"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_list_widget">
+        <property name="title">
+         <string>listWidget</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QListWidget" name="listWidget"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_tree_widget">
+        <property name="title">
+         <string>treeWidget</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTreeWidget" name="treeWidget">
+           <column>
+            <property name="text">
+             <string>新建列</string>
+            </property>
+           </column>
+           <item>
+            <property name="text">
+             <string>编辑</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>复制</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>剪切</string>
+             </property>
+            </item>
+           </item>
+           <item>
+            <property name="text">
+             <string>格式</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>粗体</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>下划线</string>
+             </property>
+            </item>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_table_widget">
+        <property name="title">
+         <string>tableWidget</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <row>
+            <property name="text">
+             <string>编辑</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>格式</string>
+            </property>
+           </row>
+           <column/>
+           <column/>
+           <column/>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

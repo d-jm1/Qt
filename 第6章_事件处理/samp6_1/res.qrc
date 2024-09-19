@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/pic/images">
+        <file>独显默认.png</file>
+    </qresource>
+</RCC>
